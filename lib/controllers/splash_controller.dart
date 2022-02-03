@@ -12,9 +12,9 @@ class SplashController extends GetxController {
   void onReady() {
     // TODO: implement onReady
     super.onReady();
-    // Future.delayed(Duration(milliseconds: 5000), (){
-    //   Get.offNamed('/home');
-    // });
+    Future.delayed(Duration(milliseconds: 4000), (){
+      Get.offNamed('/home');
+    });
   }
 
 
