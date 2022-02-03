@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pokedex_app/controllers/home_controller.dart';
+import 'package:pokedex_app/pages/home_page_widgets/base_pokemon_list.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -68,7 +69,8 @@ class HomePage extends StatelessWidget {
                         ),
                       )
                     ],
-                  )
+                  ),
+                  Expanded(child: BasePokemonList())
                 ],
               ),
             ),

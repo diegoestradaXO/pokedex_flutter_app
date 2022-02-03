@@ -11,7 +11,14 @@ class HomeController extends GetxController {
   Future<void> loadBasePokemons() async{
     final data = await PokemonApi.instance.getBasePokemons();
     this._basePokemons = data!;
+    update(['basePokemonList']);
   }
 
+  @override
+  void onInit() {
+    // TODO: implement onInit
+    super.onInit();
+    this.loadBasePokemons();
+  }
   
 }
